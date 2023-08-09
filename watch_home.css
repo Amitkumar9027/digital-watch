@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Clock hands */
+#hour{
+    position: absolute;
+    top: 25.9%;
+    left: 48.8%;
+    height: 23%;
+    width: 2%;
+    border-radius: 10px;
+    background-color: rgba(92, 6, 114, 0.793);
+    transform-origin: bottom;
+}#minute{
+    position: absolute;
+    top: 23.9%;
+    left:49.3%;
+    height: 25%;
+    width: 1.2%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.532);
+    transform-origin: bottom;
+}
+#second{
+    position: absolute;
+    top: 18.9%;
+    left:49.6%;
+    height: 30%;
+    width: 1%;
+    border-radius: 10px;
+    background-color: rgba(219, 24, 24, 0.483);
+    transform-origin: bottom;
+}
+.clock_container{
+    position:relative;
+    height: 40vw;
+    width: 40vw;
+    background: url('images/wall_watch.png');
+    background-size: 100%;
+}
+.clock_container img{
+    height: 500px;
+    width: 500px;
+}
+.digital_watch{
+  text-align: center;
+  height: 5vw;
+  width: 15vw;
+  background-color: rgb(31, 27, 27);
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px 5px rgba(68, 57, 57, 0.884);
+  margin-left: 20vw;
+  margin-top: 10vw;
+  color: white;
+  font-size: 2.6vw;
+  font-family: 'Victor Mono', monospace;
+  padding-top: .5vw;
+}
+#hour1{
+    color: rgb(227, 67, 227);
+}
+#minute1{
+    color: rgb(30, 198, 220);
+}
+@media only screen and (max-width:500px){
+    .main_container{
+        flex-direction: column;
+    }
+    .digital_watch{
+        margin-left: 10vw;
+    }
+}
